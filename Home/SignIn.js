@@ -7,7 +7,7 @@ const SignIn = () => {
             <Navbar />
 
             <div className='registration-box ms-auto mb-2 mb-lg-0'>
-                <form>
+                <form action="/patientHome">
                     <div className="title">
                         <h3>Sign In</h3>
                     </div>
@@ -24,7 +24,7 @@ const SignIn = () => {
                         <button className="btn btn-outline-primary" type="reset">Clear</button>
                     </div>
                     <div className="input-link">
-                        Don't have an account? <a href="">Register here.</a>
+                        Don't have an account? <label>Register here</label>|<a href="/patientRegistration">Patient Registration</a>|<a href="/hospitalRegistration">Hospital Registration</a>
                     </div>
                 </form>
             </div>

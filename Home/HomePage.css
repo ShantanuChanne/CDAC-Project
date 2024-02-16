@@ -1,4 +1,4 @@
-body {
+ body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
@@ -27,7 +27,6 @@ body {
 .navbar {
     padding: 0 0 4.5rem;
     background: rgba(87, 136, 217, .6);
-    backdrop-filter: blur(10px);
     color: #fff;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
@@ -35,12 +34,23 @@ body {
 .nav-link {
     font-size: 1.2rem;
     font-family: 'Montserrat-light', sans-serif;
-    color: black;
+}
+
+.navbar .offcanvas-body .nav-item .nav-link{
+    color: #fff;
+}
+
+.dropdown .dropdown-menu{
+    width: 200px;
+    text-align: center;
+    background: rgba(87, 136, 217, .6);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .dropdown-item {
     font-size: 1.2rem;
     font-family: 'Montserrat-light', sans-serif;
+    
 }
 
 .container {
@@ -233,8 +243,14 @@ body {
 .testimonial-card {
     max-width: 50%;
     max-height: 350px;
-    background: linear-gradient(135deg, #1ae61a, #1ae687);
+    /* background: linear-gradient(135deg, #1ae61a, #1ae687); */
+    /* background: rgba(87, 136, 217, .6); */
     margin-left: -200px;
+}
+
+.testimonial-container .card{
+    background: rgba(87, 136, 217, .7);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .testimonial-img{
@@ -320,4 +336,8 @@ footer {
 
 .homepage {
     background: #fff;
+}
+
+.navbar .offcanvas-body .nav-item .nav-link:hover {
+    color: #e67d1a;
 }
