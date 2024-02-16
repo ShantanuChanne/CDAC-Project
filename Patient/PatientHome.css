@@ -1,0 +1,131 @@
+/* .patient-container .offcanvas-body .nav-item{
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+   
+} */
+
+.navbar .container-fluid .offcanvas .offcanvas-body form .d-flex .btn {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.navbar {
+    padding: 0 0 4.5rem;
+    background: rgba(87, 136, 217, .726);
+    color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.patient-container {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../Images/patientHome.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.d-flex .btn {
+    text-align: center;
+    padding: 0 20px;
+    margin-left: 100px;
+}
+
+.d-flex label {
+    font-size: x-large;
+    padding: 0 10px;
+}
+
+.d-flex {
+    position: relative;
+    padding-right: 100px;
+}
+
+.appointment-container {
+
+    padding-top: 100px;
+}
+
+.appointment-container .table tr td .btn button {
+    size: 0.5rem;
+}
+
+.app-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.book-contianer {
+    padding-top: 100px;
+}
+
+.book-contianer .form-select {
+    position: relative;
+    max-width: 40%;
+    margin-left: 500px;
+    margin-top: 5px;
+}
+
+.book-table {
+    padding-top: 50px;
+}
+
+.viewDoctor-container {
+    padding-top: 90px;
+}
+
+.contact-details {
+    padding-top: 80px;
+}
+
+.form-control {
+    max-width: 20%;
+}
+
+.slot-book {
+    margin-left: 200px;
+    display: flex;
+    padding-top: 100px;
+    height: 10%;
+
+}
+
+.viewDoctor-container .form-select {
+    max-width: 10%;
+    height: 20%;
+}
+
+.slot-container {
+    position: relative;
+    margin-left: 200px;
+    display: flex;
+    width: 700px;
+  
+}
+
+.slot-container .form-select {
+    max-width: 20%;
+    margin: 0px 10px 0px 0px;
+}
+
+
+
+.slot-book .form-control {
+    max-width: 40%;
+    margin: 0px 10px 0px 10px;
+}
+
+.slot-book label {
+    margin-top: 7px;
+}
+
+.col-profile {
+    padding-top: 20px;
+}
+
