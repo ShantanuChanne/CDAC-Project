@@ -49,7 +49,7 @@ public class HospitalController {
     private Logger logger = LoggerFactory.getLogger(HospitalController.class);
     
     @PostMapping("/login")
-    public ResponseEntity<JwtResponse> login(@RequestBody Login login) {
+    public ResponseEntity<JwtResponse> login(@RequestBody Login login) throws Exception{
 
         this.doAuthenticate(login.getEmail(), login.getPassword());
 
@@ -74,11 +74,6 @@ public class HospitalController {
             throw new BadCredentialsException(" Invalid Username or Password  !!");
         }
 
-    }
-    
-    @ExceptionHandler(BadCredentialsException.class)
-    public String exceptionHandler() {
-        return "Credentials Invalid !!";
     }
     
     @PostMapping("/save")
