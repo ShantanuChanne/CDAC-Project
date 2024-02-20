@@ -20,9 +20,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.app.appointment.entity.Hospital;
 import com.app.appointment.entity.JwtResponse;
 import com.app.appointment.entity.Login;
-
+import com.app.appointment.entity.Patient;
 import com.app.appointment.security.JwtHelper;
 import com.app.appointment.service.HospitalService;
+import com.app.appointment.service.SequenceGeneratorService;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -37,6 +38,9 @@ public class HospitalController {
     
     @Autowired
     private HospitalService hospitalService;
+    
+    @Autowired
+    private SequenceGeneratorService sequenceGeneratorService;
 
 
     @Autowired
@@ -79,6 +83,7 @@ public class HospitalController {
     
     @PostMapping("/save")
     public Hospital addHospital(@RequestBody Hospital hospital) {
+    	hospital.set_id(sequenceGeneratorService.getSequenceNumber(Patient.SEQUENCE_NAME));
     	return hospitalService.addHospital(hospital);
     }
 }

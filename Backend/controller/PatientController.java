@@ -24,6 +24,7 @@ import com.app.appointment.entity.Patient;
 import com.app.appointment.security.JwtHelper;
 
 import com.app.appointment.service.PatientService;
+import com.app.appointment.service.SequenceGeneratorService;
 
 @RestController
 @CrossOrigin(origins = "*")
@@ -37,6 +38,9 @@ public class PatientController {
     
     @Autowired
     private PatientService patientService;
+    
+    @Autowired
+    private SequenceGeneratorService sequenceGeneratorService;
 
 
     @Autowired
@@ -79,6 +83,7 @@ public class PatientController {
     
     @PostMapping("/save")
     public Patient addHospital(@RequestBody Patient patient) {
+    	patient.set_id(sequenceGeneratorService.getSequenceNumber(Patient.SEQUENCE_NAME));
     	return patientService.addHospital(patient);
     }
 }
